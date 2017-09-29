@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sort Algoritms On JS</title>
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -10,8 +11,11 @@
 		<h1 class="title">Sort Algoritms On JS</h1>
 		<div class="sort-wrap">
 			<h2>Выберите максимальное и минимальное значение для генерации случайного массива</h2>
-			<input id="min" type="number" placeholder="min"/>
-			<input id="max" type="number" placeholder="max"/>
+			<div class="inputs">
+				<input id="min" type="number" placeholder="min"/>
+				<input id="max" type="number" placeholder="max"/>
+				<input type="button" id="generateRandomArray" value="Generate Random Array" />
+			</div>
 			<div class="sort-buttons">
 				<input type="button" id="linear-sort" value="Linear Sort"></input>
 				<input type="button" id="bubble-sort" value="Bubble Sort"></input>
@@ -20,7 +24,9 @@
 			</div>
 		</div>
 		<div class="algoritm-view">
-			
+			<ul id="algoritm">
+				
+			</ul>
 		</div>
 	</div>
 </body>
